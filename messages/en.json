@@ -4,5 +4,21 @@
     "description": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",
     "deploy": "Deploy Now",
     "documentation": "Documentation"
+  },
+  "auth": {
+    "welcomeLabel": "Access",
+    "loginTitle": "Sign in to your workspace",
+    "loginSubtitle": "Use your admin-provisioned account to continue.",
+    "email": "Email",
+    "password": "Password",
+    "login": "Sign in",
+    "loggingIn": "Signing in...",
+    "loginError": "Unable to sign in. Check your details and try again.",
+    "registerDisabled": "Registration is disabled. Ask an admin to create your account.",
+    "loggedOut": "You are signed out.",
+    "loggedInAs": "Signed in as",
+    "logout": "Sign out",
+    "signingOut": "Signing out...",
+    "loading": "Loading session..."
   }
 }

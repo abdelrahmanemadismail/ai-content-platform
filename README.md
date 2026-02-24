@@ -63,6 +63,27 @@ A modern, fully-featured Next.js template with internationalization, dark mode s
 5. **First-time setup:**
    See [TEMPLATE_SETUP.md](TEMPLATE_SETUP.md) for detailed setup instructions and customization guide.
 
+## 🔐 Auth Setup (Better Auth + Drizzle)
+
+1. **Set environment variables** in `.env.local` (see `.env.example`).
+2. **Clear the database (destructive):**
+   ```bash
+   psql "$DATABASE_URL" -f scripts/reset-db.sql
+   ```
+3. **Generate Better Auth schema (Drizzle):**
+   ```bash
+   npx @better-auth/cli@latest generate --output ./src/db/schema.ts
+   ```
+4. **Create and run migrations (Drizzle Kit):**
+   ```bash
+   npx drizzle-kit generate
+   npx drizzle-kit migrate
+   ```
+5. **Create the first user:**
+   ```bash
+   npm run auth:create-user -- admin@example.com SuperSecret123 "Admin User"
+   ```
+
 ## 📁 Project Structure
 
 ```
